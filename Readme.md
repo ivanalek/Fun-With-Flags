@@ -32,7 +32,9 @@ Because the app is fully native it only requires Xcode 10+ version and regular B
 
 ## Resources
 Countries are fetched from: https://restcountries.eu
+
 Images are pre-downloaded from: https://github.com/hjnilsson/country-flags
+
 Flag app icon:  https://www.flaticon.com/authors/smashicons
 
 ## License
