@@ -142,6 +142,7 @@
                         <outlet property="loadingIndicator" destination="B9v-eW-y1f" id="xxG-aE-kRN"/>
                         <outlet property="loadingLabel" destination="czF-NS-bBm" id="7sL-Qe-f3J"/>
                         <outlet property="retryButton" destination="qFI-8V-qjH" id="7do-fH-pet"/>
+                        <outlet property="searchBar" destination="AR3-ix-TQJ" id="ZgK-Cm-tVJ"/>
                         <outlet property="tableView" destination="txZ-xy-Z4t" id="t6M-dR-Qaq"/>
                     </connections>
                 </viewController>

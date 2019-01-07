@@ -21,7 +21,8 @@ class CountriesViewController: UIViewController {
 	@IBOutlet weak var loadingLabel: UILabel!
 	@IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
 	@IBOutlet weak var tableView: UITableView!
-	
+	@IBOutlet weak var searchBar: UISearchBar!
+
 	private var countryViewModels = [CountryViewModel]()
 	private var sortedCountryGroupNames = [Character]()
 	private var visibleGroupedCountries = [Character? :[CountryViewModel]]()
@@ -106,11 +107,13 @@ class CountriesViewController: UIViewController {
 			loadingLabel.text = NSLocalizedString("Loading...", comment: "")
 			loadingLabel.isHidden = false
 			retryButton.isHidden = true
+			searchBar.isHidden = true
 		case .loaded:
 			loadingIndicator.stopAnimating()
 			loadingIndicator.isHidden = true
 			loadingLabel.isHidden = true
 			retryButton.isHidden = true
+			searchBar.isHidden = false
 		case .error(let error):
 			applyErrorState(error: error)
 		}
@@ -127,6 +130,7 @@ class CountriesViewController: UIViewController {
 		loadingIndicator.isHidden = true
 		loadingLabel.isHidden = false
 		retryButton.isHidden = false
+		searchBar.isHidden = true
 	}
 	
 	private func setInitiallyLoadedCountries() {
