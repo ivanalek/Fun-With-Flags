@@ -7,6 +7,7 @@ This is a simple native iOS application written in Swift in MVC architecture wit
 - Quick Look Countries indexed by the first letter of their names
 - Search Countries by keyword
 - View Country Flag, Map and other details.
+- Country data is persisted on disk, so internet connection is only required on first start. Once data is loaded and persisted, we re-fetch and check if anything was changed.
 
 ## Architecture Overview
 Mainly the app follows the MVC + ViewModel design pattern. Because of the simplicity of this app, the ViewModel is used in only one direction. In addition to that, all concernes are placed in separate class ensuring better reusability and testability.
