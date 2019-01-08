@@ -25,7 +25,7 @@ There are couple of UI Tests that excersize the most commonly used scenarios:
 	- Search for a non valid keyword and confirm that there is no match.
 
 ## Dependencies
-The application is built fully native without the need to  introduce and dependency management tool.
+The application is built fully native without the need to  introduce any dependency management tool.
 
 
 ## Build, Test, Run requirements and steps
